@@ -51,10 +51,10 @@ def callback():
 @handler.add(MessageEvent, message=TextMessage) #Messageが来たとき、start()追加された時などもある
 def handle_message(event):
     reply_text = event.message.text #コメントを抜き出す
-    line_bot_api.reply_message{
+    line_bot_api.reply_message(
         event.reply_token,
         TextSendMessage(text=reply_text) #Messageが来たとき、これを送る
-    }
+    )
 
 if __name__ == "__main__":
 #    app.run()
