@@ -29,7 +29,7 @@ handler = WebhookHandler(YOUR_CHANNEL_SECRET)
 
 @app.route("/")
 def hello_world():
-    return "オウム返しのラインボットを作りました"
+    return "港区女子レイナです。\n'好き'と言われると、、。\nご飯行こと言われると、、。"
 
 @app.route("/callback", methods=['POST'])
 def callback():
@@ -52,6 +52,8 @@ def callback():
 def handle_message(event):
     if "好き" in event.message.text:
         reply_text = "私もよ"
+    elif "ご飯行こ" in event.message.text:
+        reply_text = "2万ね"
     else:
         reply_text = event.message.text
 
