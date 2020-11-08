@@ -29,10 +29,7 @@ handler = WebhookHandler(YOUR_CHANNEL_SECRET)
 
 @app.route("/")
 def hello_world():
-    print("港区女子レイナです。")
-    print("'好き'と言われると、、。")
-    print("ご飯行こと言われると、、。")
-    return "追加してね"
+    return "https://github.com/yoshiwo115/linebot01/blob/master/QR.png"
 
 @app.route("/callback", methods=['POST'])
 def callback():
