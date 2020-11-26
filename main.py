@@ -2,8 +2,8 @@ from flask import Flask, request, abort
 import os
 import logging
 import sys
-# import MeCab
-# m = Mecab.Tagger('')
+import MeCab
+m = Mecab.Tagger('')
 
 from linebot import (
     LineBotApi, WebhookHandler
@@ -56,8 +56,8 @@ def handle_message(event):
         reply_text = "私もよ"
     elif "ご飯行こ" in event.message.text:
         reply_text = "2万ね"
-    # elif "形態素解析" in event.message.text:
-    #     reply_text = m.parse(event.message.text)
+    elif "形態素解析" in event.message.text:
+        reply_text = m.parse(event.message.text)
     else:
         reply_text = event.message.text
 
