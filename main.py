@@ -2,7 +2,7 @@ from flask import Flask, request, abort
 import os
 import logging
 import sys
-import MeCab
+# import MeCab
 
 from linebot import (
     LineBotApi, WebhookHandler
@@ -15,7 +15,7 @@ from linebot.models import (
 )
 
 
-m = MeCab.Tagger('')
+# m = MeCab.Tagger('')
 
 app = Flask(__name__)
 # ログを標準出力に出力する
