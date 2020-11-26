@@ -3,7 +3,6 @@ import os
 import logging
 import sys
 import MeCab
-m = Mecab.Tagger('')
 
 from linebot import (
     LineBotApi, WebhookHandler
@@ -14,6 +13,9 @@ from linebot.exceptions import (
 from linebot.models import (
     FollowEvent, MessageEvent, TextMessage, TextSendMessage,
 )
+
+
+m = MeCab.Tagger('')
 
 app = Flask(__name__)
 # ログを標準出力に出力する
