@@ -2,10 +2,9 @@
 港区女子とのラインの練習が出来ます。
 
 # DEMO
-画像
+![demo](https://user-images.githubusercontent.com/67818134/108991442-77843300-76db-11eb-9a03-7016828dc5b5.png)
 
 # Features
-
 [背景] 
 私の友人に港区女子がいます。
 えげつないことをしています。
@@ -17,6 +16,7 @@
 
 # Installation
 QRから友達追加します。
+
 
 # Author
 * yoshiwo
